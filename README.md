@@ -2,7 +2,9 @@
 
 # RideOverlay
 
-**Echtzeit-Overlays, Gruppen, Karte und Fahrtanalyse für Zwift – modern, schnell und datensparsam.**
+### Mehr Daten. Mehr Kontrolle. Mehr Watt.
+
+**Echtzeit-Overlays für Zwift – frei konfigurierbar, modern und blitzschnell.<br>Gebaut für alle, die jedes Watt zählen.**
 
 [![Neueste Version](https://img.shields.io/github/v/release/mazdaansbach/rideoverlay-releases?label=Version&color=4f8cff)](https://github.com/mazdaansbach/rideoverlay-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/mazdaansbach/rideoverlay-releases/total?label=Downloads&color=2bb673)](https://github.com/mazdaansbach/rideoverlay-releases/releases)
