@@ -116,7 +116,7 @@ Nein. RideOverlay beobachtet nur und zeigt Daten an. Es sendet nichts in deinem 
 <details>
 <summary><b>Warum warnt Windows bei der Installation?</b></summary>
 
-Für die Windows-Warnung bräuchte es ein kostenpflichtiges Code-Signatur-Zertifikat. Die Echtheit der Updates sichert RideOverlay mit einer eigenen digitalen Signatur.
+Um diese Warnung zu vermeiden, bräuchte es ein kostenpflichtiges Code-Signatur-Zertifikat. Die Echtheit der Updates sichert RideOverlay stattdessen mit einer eigenen digitalen Signatur.
 </details>
 
 <details>
