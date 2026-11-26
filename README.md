@@ -15,9 +15,9 @@
 
 <br>
 
-<img src="docs/hero.jpg" alt="RideOverlay: Übersichtsleiste, Gruppen, Chat, Werteraster, Kategorie-Wächter und Leistungstacho" width="100%">
+<img src="docs/hero.jpg" alt="RideOverlay: Übersichtsleiste, Gruppen, Werteraster, Segmente, Kategorie-Wächter und Leistungstacho" width="100%">
 
-<sub>Beispielhafte Anordnung der Vorlage „Rennen“ – der Hintergrund ist gezeichnet, keine Spielgrafik.</sub>
+<sub>Beispielhafte Anordnung der Vorlage „Punkterennen“ – der Hintergrund ist gezeichnet, keine Spielgrafik.</sub>
 
 </div>
 
@@ -26,8 +26,9 @@
 ## Was ist RideOverlay?
 
 RideOverlay legt sich während deiner Zwift-Fahrt als schlanke, durchsichtige Fenster über das Spiel und zeigt dir, was Zwift selbst nicht zeigt:
-- wer vor und hinter dir fährt und mit welchem Abstand
+- wer vor und hinter dir fährt und mit welchem Abstand – beim Mannschaftszeitfahren auch nur dein Team
 - deine Werte im Detail: Normalized Power, W'bal, Zonen, Spitzenwerte
+- die Sprints und Bergwertungen der Route mit deinen bisherigen Zeiten
 - wie nah du an der nächsthöheren Kategorie bist
 
 Nach der Fahrt wertest du alles aus und exportierst die Fahrt als FIT-Datei.
@@ -38,15 +39,17 @@ Alles läuft **lokal auf deinem PC**. Es gibt kein Konto bei uns, keine Werbung 
 
 |                                           |                                                                                                                                                                                       |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Gruppen & Abstände in Echtzeit**        | Gruppen vor und hinter dir als Blasen, mit Größe, Abstand in Sekunden, W/kg und Tempo. Fahrer in der Nähe als sortierbare Tabelle mit rund 50 wählbaren Spalten.                         |
+| **Gruppen & Abstände in Echtzeit**        | Gruppen vor und hinter dir mit Größe, Abstand in Sekunden, W/kg und Tempo. Fahrer in der Nähe als sortierbare Tabelle mit rund 50 wählbaren Spalten, darunter der Platz im Event.   |
+| **Fürs Mannschaftszeitfahren**            | Tabelle nur mit deinem Team (erkannt am Kürzel im Namen) oder mit selbst markierten Fahrern, sortiert nach der Reihenfolge auf der Straße, mit Platz, Watt, W/kg und Puls.        |
+| **Segmente & Punkterennen**               | Der nächste Sprint oder die nächste Bergwertung mit Entfernung, live gemessener Zeit auf die Zehntelsekunde, deiner Bestzeit und den letzten Versuchen.                              |
 | **Werte, wie du sie brauchst**            | Frei belegbares Raster, Tachos, Übersichtsleiste. Über 70 Felder, z. B. Leistung, W/kg, NP, TSS, W'bal, Zonen, Runden, Windschatten.                                                  |
 | **Kategorie-Wächter**                     | Überwacht zMAP und zFTP gleichzeitig und warnt, **bevor** dich eine starke Fahrt in die nächste Pace-Gruppe hebt. Dazu die Höchstleistung für 5 und 20 Minuten.                     |
 | **Karte & Höhenprofil**                   | Route, Fahrer, Segmente und verbleibende Strecke im Event.                                                                                                                            |
 | **Analyse & FIT-Export**                  | Jede Fahrt mit Bereichsauswahl, Zonen, Spitzenwerten und Entkopplung auswerten, als FIT-Datei z. B. für Strava speichern.                                                             |
 | **Events, Chat & Athleten**               | Event-Katalog mit Anmeldung, Teilnehmern und Ergebnissen, Chat der Fahrer in der Nähe, Profilkarten, Folgen und Ride On.                                                              |
 | **Für Streamer**                          | Alle Overlays auch im Browser und als **OBS-Browserquelle**, geschützt per Zugriffsschlüssel.                                                                                         |
-| **Durchdacht für das Spiel**              | Vorlagen verdecken weder deinen Fahrer noch Zwifts eigene Anzeigen. Im fixierten Modus gehen Klicks durch zum Spiel, und die Overlays blenden sich bei Bedarf aus, z. B. bei #nooverlays. |
-| **Updates von selbst**                    | Neue Versionen kommen automatisch, sind digital signiert und werden **nie während einer Fahrt** installiert.                                                                         |
+| **Durchdacht für das Spiel**              | Vorlagen für Rennen, Punkterennen, TTT, Training und Gruppenfahrt verdecken weder deinen Fahrer noch Zwifts eigene Anzeigen. Im fixierten Modus gehen Klicks durch zum Spiel, und die Overlays blenden sich bei Bedarf aus, z. B. bei #nooverlays. |
+| **Updates von selbst**                    | Neue Versionen werden gleich nach dem Start erkannt, kommen automatisch, sind digital signiert und werden **nie während einer Fahrt** installiert.                                  |
 
 ## Einblicke
 
@@ -60,6 +63,11 @@ Alles läuft **lokal auf deinem PC**. Es gibt kein Konto bei uns, keine Werbung 
     <td align="center"><img src="docs/screens/gauge-power.png" alt="Tacho Leistung" width="80%"><br><sub><b>Tachos</b> – Leistung, HF, Kadenz, W'bal …</sub></td>
     <td align="center"><img src="docs/screens/chat.png" alt="Chat" width="100%"><br><sub><b>Chat</b> mit Werten der Fahrer</sub></td>
     <td align="center"><img src="docs/screens/gauge-hr.png" alt="Tacho Herzfrequenz" width="80%"><br><sub><b>Herzfrequenz</b> mit Zonenfarben</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screens/segments.png" alt="Segmente" width="100%"><br><sub><b>Segmente</b> – Sprints und Berge mit deinen Zeiten</sub></td>
+    <td align="center"><img src="docs/screens/nearby.png" alt="Fahrer in der Nähe" width="100%"><br><sub><b>Fahrer in der Nähe</b> – nach Abstand, beim TTT nur dein Team</sub></td>
+    <td align="center"><img src="docs/screens/overview.png" alt="Übersichtsleiste" width="100%"><br><sub><b>Übersichtsleiste</b> – Felder per langem Drücken tauschen</sub></td>
   </tr>
 </table>
 
@@ -86,7 +94,8 @@ Alles läuft **lokal auf deinem PC**. Es gibt kein Konto bei uns, keine Werbung 
 
 ## Automatische Updates
 
-RideOverlay prüft beim Start und alle 6 Stunden, ob es eine neue Version gibt:
+RideOverlay prüft wenige Sekunden nach dem Start und danach alle 6 Stunden, ob es eine neue Version gibt:
+- Sobald eine neue Version gefunden ist, siehst du einen Hinweis in der App und eine Windows-Mitteilung.
 - Updates werden im Hintergrund geladen und nur angenommen, wenn die **digitale Signatur** stimmt.
 - Installiert wird erst nach deinem Klick, nie während einer Fahrt. Vorher entsteht automatisch ein Backup deiner Einstellungen.
 - Nach dem Neustart siehst du, was neu ist.
@@ -134,10 +143,20 @@ Ja. Unter „Webserver & OBS“ einschalten und den Link eines Fensters als Brow
 </details>
 
 <details>
+<summary><b>Windows meldet beim Update einen Zertifikatsfehler.</b></summary>
+
+Dann prüft meist ein Virenscanner oder ein Firmennetz die Verbindung mit. Die neue Version kannst du jederzeit von Hand unter [Releases](https://github.com/mazdaansbach/rideoverlay-releases/releases/latest) laden und über die bestehende Installation installieren – deine Einstellungen bleiben erhalten.
+</details>
+
+<details>
 <summary><b>Wo finde ich die Anleitung?</b></summary>
 
 In der App unter **Hilfe**, dort auch als PDF speicherbar.
 </details>
+
+## Unterstützen
+
+RideOverlay ist kostenlos und bleibt es – alle Funktionen sind frei. Wenn dir die App gefällt, kannst du die Weiterentwicklung freiwillig auf [**ko-fi.com/rideoverlay**](https://ko-fi.com/rideoverlay) unterstützen.
 
 ## Hinweise
 
